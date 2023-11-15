@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        git(url: 'https://github.com/EraLiveTWITCH/docker-node-example.git', branch: 'CESI')
+        git(url: 'https://github.com/EraLiveTWITCH/docker-node-example', branch: 'CESI')
       }
     }
 
