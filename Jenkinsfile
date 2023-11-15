@@ -1,11 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Tests') {
+    stage('build') {
       steps {
-        echo 'start test stage'
-        sleep 20
-        echo 'end tests stage'
+        git(url: 'https://github.com/EraLiveTWITCH/docker-node-example.git', branch: 'CESI')
       }
     }
 
